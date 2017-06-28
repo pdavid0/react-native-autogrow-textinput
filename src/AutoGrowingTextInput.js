@@ -39,7 +39,7 @@ export default class AutoGrowingTextInput extends Component {
       <TextInput
         multiline={true}
         {...this.props}
-        style={[this.props.style, {height: 'auto'}]}
+        style={[this.props.style, {height: 100}]}
         onContentSizeChange={this._onContentSizeChangeIOS}
         onChange={this._onChangeIOS}
         ref={(r) => { this._textInput = r; }}
